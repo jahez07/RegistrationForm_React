@@ -20,7 +20,7 @@ const LoginForm = () => {
                     <MdOutlineMailLock className="icon"/>
                 </div>
                 <div className="topic">Phone Number</div>
-                <div className="input-box">
+                <div className="phone-input-box">
                     <input type="text" placeholder="Phone" required />
                     <MdOutlineLocalPhone className="icon"/>
                 </div>

@@ -2,6 +2,8 @@
     width: 420px;
     background: rgb(248, 134, 31);
     color: black;
+    border-radius: 20px;
+    padding: 30px 40px;
 }
 
 .wrapper h1 {
@@ -11,7 +13,7 @@
 
 .wrapper .topic {
     font-size: 16px;
-    padding: 10px 25px 10px;
+    padding: 5px 25px 0px;
     font-weight: 100px;
 
 }
@@ -20,15 +22,16 @@
     position:  relative;
     width: 100%;
     height: 50px;
+    margin: 5px 0 5px;
 }
+
 
 .input-box input {
     width: 100%;
     height: 100%;
     background: transparent;
-    border: none;
-    outline: none;
     border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
     border-radius: 40px;
     font-size: 16px;
     color: #fff;
@@ -40,6 +43,39 @@
 }
 
 .input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+                                    /* P H O N E */
+
+.wrapper .phone-input-box {
+    position:  relative;
+    width: 100%;
+    height: 50px;
+    margin: 10px 0 30px;
+}
+
+.phone-input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 25px 20px;
+}
+
+.phone-input-box input::placeholder {
+    color: #fff;
+}
+
+.phone-input-box .icon {
     position: absolute;
     right: 20px;
     top: 50%;
