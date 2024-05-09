@@ -9,6 +9,13 @@
     text-align: center;
 }
 
+.wrapper .topic {
+    font-size: 16px;
+    padding: 10px 25px 10px;
+    font-weight: 100px;
+
+}
+
 .wrapper .input-box {
     position:  relative;
     width: 100%;
@@ -51,4 +58,5 @@
     cursor: pointer;
     font-size: 16px;
     color: #333;
+    font-weight: 700;
 }
