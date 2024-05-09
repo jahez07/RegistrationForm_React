@@ -4,5 +4,5 @@
 wrapper : 
 `background`: (248, 134, 31)
 
-    .wrapper .inputbox: 
-    `background`: (213, 215, 218)
+.wrapper .inputbox: 
+`background`: (213, 215, 218)
