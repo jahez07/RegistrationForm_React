@@ -15,7 +15,6 @@ const LoginForm = () => {
             body: formData
         }).then((res)=>res.json()).then((data)=>{
             console.log(data)
-            formEle.reset()
         }).catch((error)=>console.log(error))
       }
     return(
