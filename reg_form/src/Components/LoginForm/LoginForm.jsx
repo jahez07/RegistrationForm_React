@@ -9,6 +9,7 @@ const LoginForm = () => {
         <div className="wrapper">
             <form action="">
                 <h1>Admissions Form</h1>
+                <div className="form">
                 <div className="topic">Student Name</div>
                 <div className="input-box">
                     <input type="text" placeholder="Name" required />
@@ -25,6 +26,7 @@ const LoginForm = () => {
                     <MdOutlineLocalPhone className="icon"/>
                 </div>
                 <button type="submit">Register</button>
+                </div>
             </form>
         </div>
     );
