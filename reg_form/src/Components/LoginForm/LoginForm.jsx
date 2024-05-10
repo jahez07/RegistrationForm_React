@@ -7,7 +7,7 @@ import { FaRegUser } from "react-icons/fa";
 const LoginForm = () => {
     function Submit(e){
         const formEle = document.querySelector("form")
-        /*e.preventDefault()*/
+        e.preventDefault()
         console.log("Submitted")
         const formData = new FormData(formEle)
         fetch("https://script.google.com/macros/s/AKfycbz6CY3pFdG4Hu3TGXIZQ_vpn6ANQSrn5ofsfUasoqe0HwsLqDn4jvGzUa3naUd2V_wJLQ/exec",{
