@@ -15,8 +15,6 @@ const LoginForm = () => {
             body: formData
         }).then((res)=>res.json()).then((data)=>{
             console.log(data)
-            const inputElement = document.querySelector("input[type='text']");
-            inputElement.value = '';
         }).catch((error)=>console.log(error))
       }
     return(
