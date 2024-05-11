@@ -7,4 +7,4 @@ wrapper :
 .wrapper .inputbox: 
 `background`: (213, 215, 218)
 
-Please note [Form.tsx](framerForm.tsx)) is a form made for Framer
+Please note [Form.tsx](framerForm.tsx) is a form made for Framer
