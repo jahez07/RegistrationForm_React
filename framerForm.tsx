@@ -221,6 +221,49 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Address"
             />
+            <h3 style={titleStyle}>Name of Educational Institution</h3>
+            <text style={textStyle}>
+                Name of college you have applied in Coimbatore, as written in
+                official documents <br /> (Prospectus, Application Form,
+                Admission Letter, etc.)
+            </text>
+            <input
+                type="text"
+                name="edName"
+                style={inputStyle}
+                placeholder="Institution Name"
+            />
+            <h3 style={titleStyle}>Location of Educational Institution</h3>
+            <text style={textStyle}>
+                Specific location of the college in Coimbatore
+            </text>
+            <input
+                type="text"
+                name="edLoc"
+                style={inputStyle}
+                placeholder="Address"
+            />
+            <h3 style={titleStyle}>Duration of Course</h3>
+            <text style={textStyle}>
+                Please follow this format: July 2014 to March 2018
+            </text>
+            <input
+                type="text"
+                name="duration"
+                style={inputStyle}
+                placeholder="eg : June 2024 to May 2027"
+            />
+            <h3 style={titleStyle}>
+                Expected Date of Joining Talmid{" "}
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="date"
+                name="expDateJ"
+                required
+                style={inputStyle}
+                placeholder="dd|mm|yyyy"
+            />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
