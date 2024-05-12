@@ -199,6 +199,28 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Email Address"
             />
+            <h3 style={titleStyle}>
+                Name of Organisation you work with in Coimbatore
+            </h3>
+            <text style={textStyle}>
+                (Applicable for Working Professionals only)
+            </text>
+            <input
+                type="text"
+                name="porg"
+                style={inputStyle}
+                placeholder="Organisation Name"
+            />
+            <h3 style={titleStyle}>Office Address in Coimbatore</h3>
+            <text style={textStyle}>
+                (Applicable for Working Professionals only)
+            </text>
+            <input
+                type="text"
+                name="addorg"
+                style={inputStyle}
+                placeholder="Address"
+            />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
