@@ -2,7 +2,7 @@
 // Get Started: https://www.framer.com/developers/
 
 import Example from "https://framer.com/m/framer/Example.js@^1.0.0"
-
+import PhoneInput from "react-phone-number-input"
 /**
  * These annotations control how your component sizes
  * Learn more: https://www.framer.com/developers/#code-components-auto-sizing
@@ -99,12 +99,37 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Nationality"
             />
-            <h3 style={titleStyle}>Date of Birth</h3>
+            <h3 style={titleStyle}>
+                Date of Birth <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="date"
-                name="nation"
+                name="dob"
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
+            />
+            <h3 style={titleStyle}>
+                Blood Group <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="text"
+                name="blood"
+                style={inputStyle}
+                placeholder="Blood Group"
+            />
+            <h3 style={titleStyle}>Country Code</h3>
+            <input
+                type="tel"
+                name="phone"
+                style={inputStyle}
+                placeholder="Phone Number"
+            />
+            <h3 style={titleStyle}>Phone</h3>
+            <input
+                type="tel"
+                name="phone"
+                style={inputStyle}
+                placeholder="Phone Number"
             />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
