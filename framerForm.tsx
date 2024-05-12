@@ -28,7 +28,8 @@ export default function Form(props) {
                 required
                 style={inputStyle}
                 placeholder="Email"
-            />
+            />{" "}
+            <br />
             <h3 style={titleStyle}>Registration Number</h3>
             <text style={textStyle}>
                 (Please skip this, to be updated by BIOSIS Office)
@@ -51,6 +52,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="First Name"
             />
+            <br />
             <h3 style={titleStyle}>Middle Name</h3>
             <input
                 type="text"
@@ -58,6 +60,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Middle Name"
             />
+            <br />
             <h3 style={titleStyle}>
                 Last Name <span style={{ color: "red" }}>*</span>
             </h3>
@@ -68,6 +71,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Last Name"
             />
+            <br />
             <h3 style={titleStyle}>Also Known As Name (AKA)</h3>
             <text style={textStyle}>
                 If you are popularly known in a different name that your
@@ -80,6 +84,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="AKA Name"
             />
+            <br />
             <h3 style={titleStyle}>
                 Gender <span style={{ color: "red" }}>*</span>
             </h3>
@@ -103,6 +108,7 @@ export default function Form(props) {
                     Female
                 </label>
             </div>
+            <br />
             <h3 style={titleStyle}>
                 Nationality <span style={{ color: "red" }}>*</span>
             </h3>
@@ -113,6 +119,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Nationality"
             />
+            <br />
             <h3 style={titleStyle}>
                 Date of Birth <span style={{ color: "red" }}>*</span>
             </h3>
@@ -123,6 +130,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
             />
+            <br />
             <h3 style={titleStyle}>Blood Group</h3>
             <input
                 type="text"
@@ -130,6 +138,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Blood Group"
             />
+            <br />
             <h3 style={titleStyle}>
                 Country Code <span style={{ color: "red" }}>*</span>
             </h3>
@@ -140,6 +149,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Country Code (India : +91)"
             />
+            <br />
             <h3 style={titleStyle}>
                 Phone <span style={{ color: "red" }}>*</span>
             </h3>
@@ -150,6 +160,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Phone Number"
             />
+            <br />
             <h3 style={titleStyle}>Country Code of Secondary Mobile</h3>
             <input
                 type="text"
@@ -157,6 +168,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Country Code (UAE : +971)"
             />
+            <br />
             <h3 style={titleStyle}>Secondary Mobile</h3>
             <input
                 type="tel"
@@ -164,6 +176,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Secondary Number"
             />
+            <br />
             <h3 style={titleStyle}>Country Code of WhatsApp Mobile</h3>
             <input
                 type="text"
@@ -171,6 +184,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Country Code (UAE : +971)"
             />
+            <br />
             <h3 style={titleStyle}>WhatsApp Number</h3>
             <input
                 type="tel"
@@ -178,6 +192,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="WhatsApp Number"
             />
+            <br />
             <h3 style={titleStyle}>
                 Primary Email <span style={{ color: "red" }}>*</span>
             </h3>
@@ -191,6 +206,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Email Address"
             />
+            <br />
             <h3 style={titleStyle}>Secondary Email</h3>
             <text style={textStyle}>
                 Your alternate email ID, Official email ID, etc.
@@ -201,6 +217,8 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Email Address"
             />
+            <br />
+            <h2 style={titleStyle}>College / Office</h2> <br />
             <h3 style={titleStyle}>
                 Name of Organisation you work with in Coimbatore
             </h3>
@@ -213,6 +231,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Organisation Name"
             />
+            <br />
             <h3 style={titleStyle}>Office Address in Coimbatore</h3>
             <text style={textStyle}>
                 (Applicable for Working Professionals only)
@@ -223,6 +242,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Address"
             />
+            <br />
             <h3 style={titleStyle}>Name of Educational Institution</h3>
             <text style={textStyle}>
                 Name of college you have applied in Coimbatore, as written in
@@ -235,6 +255,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Institution Name"
             />
+            <br />
             <h3 style={titleStyle}>Location of Educational Institution</h3>
             <text style={textStyle}>
                 Specific location of the college in Coimbatore
@@ -245,6 +266,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Address"
             />
+            <br />
             <h3 style={titleStyle}>Duration of Course</h3>
             <text style={textStyle}>
                 Please follow this format: July 2014 to March 2018
@@ -255,6 +277,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="eg : June 2024 to May 2027"
             />
+            <br />
             <h3 style={titleStyle}>
                 Expected Date of Joining Talmid{" "}
                 <span style={{ color: "red" }}>*</span>
@@ -266,6 +289,7 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
             />
+            <br />
             <h3 style={titleStyle}>
                 Residential Status in Talmid House
                 <span style={{ color: "red" }}>*</span>
@@ -328,6 +352,53 @@ export default function Form(props) {
                     />
                 </label>
             </div>
+            <br />
+            <h2 style={titleStyle}>Parents / Gaurdian</h2> <br />
+            <h3 style={titleStyle}>
+                In "Parent/Guardian Contact info", please provide as much as
+                information available and whichever relevant. Kindly keep your
+                Parents/Guardian informed that Biosis Talmid House may use these
+                numbers to contact them when required.
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <div style={divStyle} required>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="acknowledement"
+                        value="I Understand"
+                        style={inputStyle}
+                    />
+                    I Understand
+                </label>
+            </div>
+            <br />
+            <h3 style={titleStyle}>
+                Father's Full Name <span style={{ color: "red" }}>*</span>
+            </h3>
+            <text style={textStyle}>
+                (First Name | Middle Name | Last Name)
+            </text>
+            <input
+                type="text"
+                name="fatherName"
+                required
+                style={inputStyle}
+                placeholder="Father's Name"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Father's Phone Number with Country Code{" "}
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="text"
+                name="fatherPhone"
+                required
+                style={inputStyle}
+                placeholder="Father's Phone"
+            />
+            <br />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
