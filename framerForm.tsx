@@ -19,7 +19,9 @@ export default function Form(props) {
         "https://script.google.com/macros/s/AKfycbxCIoSzEsWq3BU_qRe-nK10QwJ9J9vULPYucUS0SsHix_7C2kJ7kqEG8dyxVJBxH0-t/exec"
     return (
         <form action={formUrl} method="post" style={containerStyle}>
-            <h3 style={titleStyle}>Email Address</h3>
+            <h3 style={titleStyle}>
+                Email Address <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="email"
                 name="email"
@@ -37,7 +39,9 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Registration Number"
             />
-            <h3 style={titleStyle}>First Name</h3>
+            <h3 style={titleStyle}>
+                First Name <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="text"
                 name="first_name"
@@ -52,10 +56,13 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Middle Name"
             />
-            <h3 style={titleStyle}>Last Name</h3>
+            <h3 style={titleStyle}>
+                Last Name <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="text"
                 name="last_name"
+                required
                 style={inputStyle}
                 placeholder="Last Name"
             />
@@ -71,7 +78,9 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="AKA Name"
             />
-            <h3 style={titleStyle}>Gender</h3>
+            <h3 style={titleStyle}>
+                Gender <span style={{ color: "red" }}>*</span>
+            </h3>
             <div style={divStyle} required>
                 <label style={labelStyle}>
                     <input
@@ -92,9 +101,12 @@ export default function Form(props) {
                     Female
                 </label>
             </div>
-            <h3 style={titleStyle}>Nationality</h3>
+            <h3 style={titleStyle}>
+                Nationality <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="text"
+                required
                 name="nation"
                 style={inputStyle}
                 placeholder="Nationality"
@@ -105,6 +117,7 @@ export default function Form(props) {
             <input
                 type="date"
                 name="dob"
+                required
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
             />
@@ -114,20 +127,27 @@ export default function Form(props) {
             <input
                 type="text"
                 name="blood"
+                required
                 style={inputStyle}
                 placeholder="Blood Group"
             />
-            <h3 style={titleStyle}>Country Code</h3>
+            <h3 style={titleStyle}>
+                Country Code <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="tel"
                 name="phone"
+                required
                 style={inputStyle}
                 placeholder="Phone Number"
             />
-            <h3 style={titleStyle}>Phone</h3>
+            <h3 style={titleStyle}>
+                Phone <span style={{ color: "red" }}>*</span>
+            </h3>
             <input
                 type="tel"
                 name="phone"
+                required
                 style={inputStyle}
                 placeholder="Phone Number"
             />
