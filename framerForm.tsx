@@ -100,7 +100,12 @@ export default function Form(props) {
                 placeholder="Nationality"
             />
             <h3 style={titleStyle}>Date of Birth</h3>
-            <datePicker label="Basic date picker" />
+            <input
+                type="date"
+                name="nation"
+                style={inputStyle}
+                placeholder="dd|mm|yyyy"
+            />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
