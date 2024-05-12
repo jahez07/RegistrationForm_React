@@ -39,6 +39,8 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="Registration Number"
             />
+            <br />
+            <h2 style={titleStyle}>Personal & Contact Info</h2> <br />
             <h3 style={titleStyle}>
                 First Name <span style={{ color: "red" }}>*</span>
             </h3>
@@ -264,6 +266,68 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
             />
+            <h3 style={titleStyle}>
+                Residential Status in Talmid House
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <div style={divStyle} required>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="resident_status"
+                        value="Regular Student"
+                        style={inputStyle}
+                    />
+                    Regular Student (Staying in Talmid House to regularly go to
+                    my college in Coimbatore)
+                </label>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="resident_status"
+                        value="Distance Education"
+                        style={inputStyle}
+                    />
+                    Distance Education (Will stay in Talmid House whenever I
+                    have to visit my college in Coimbatore)
+                </label>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="resident_status"
+                        value="Working Professional"
+                        style={inputStyle}
+                    />
+                    Working Professional (Note: Only professionals with Day Job
+                    is allowed and No Late/Night Shifts)
+                </label>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="resident_status"
+                        value="Short Term Accommodation"
+                        style={inputStyle}
+                    />
+                    Short Term Accommodation (Staying in Talmid House for a
+                    Crash Course or short period)
+                </label>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="resident_status"
+                        value="Other"
+                        style={inputStyle}
+                    />
+                    Other <br />
+                    <br />
+                    <input
+                        type="text"
+                        name="resident_status"
+                        style={inputStyle}
+                        placeholder="Type here, if Other"
+                    />
+                </label>
+            </div>
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
