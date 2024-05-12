@@ -399,6 +399,52 @@ export default function Form(props) {
                 placeholder="Father's Phone"
             />
             <br />
+            <h3 style={titleStyle}>
+                Father's Email
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="email"
+                name="fatherEmail"
+                required
+                style={inputStyle}
+                placeholder="Father's Email Address"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Mother's Full Name <span style={{ color: "red" }}>*</span>
+            </h3>
+            <text style={textStyle}>
+                (First Name | Middle Name | Last Name)
+            </text>
+            <input
+                type="text"
+                name="motherName"
+                required
+                style={inputStyle}
+                placeholder="Mother's Name"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Mother's Phone Number with Country Code{" "}
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="text"
+                name="motherPhone"
+                required
+                style={inputStyle}
+                placeholder="Mother's Phone"
+            />
+            <br />
+            <h3 style={titleStyle}>Mother's Email</h3>
+            <input
+                type="email"
+                name="motherEmail"
+                style={inputStyle}
+                placeholder="Mother's Email Address"
+            />
+            <br />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
