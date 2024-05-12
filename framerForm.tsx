@@ -150,7 +150,7 @@ export default function Form(props) {
             />
             <h3 style={titleStyle}>Country Code of Secondary Mobile</h3>
             <input
-                type="tel"
+                type="text"
                 name="scphone"
                 style={inputStyle}
                 placeholder="Country Code (UAE : +971)"
@@ -161,6 +161,43 @@ export default function Form(props) {
                 name="sphone"
                 style={inputStyle}
                 placeholder="Secondary Number"
+            />
+            <h3 style={titleStyle}>Country Code of WhatsApp Mobile</h3>
+            <input
+                type="text"
+                name="wcphone"
+                style={inputStyle}
+                placeholder="Country Code (UAE : +971)"
+            />
+            <h3 style={titleStyle}>WhatsApp Number</h3>
+            <input
+                type="tel"
+                name="wphone"
+                style={inputStyle}
+                placeholder="WhatsApp Number"
+            />
+            <h3 style={titleStyle}>
+                Primary Email <span style={{ color: "red" }}>*</span>
+            </h3>
+            <text style={textStyle}>
+                (The email ID which you are mostly associated with)
+            </text>
+            <input
+                type="email"
+                name="pemail"
+                required
+                style={inputStyle}
+                placeholder="Email Address"
+            />
+            <h3 style={titleStyle}>Secondary Email</h3>
+            <text style={textStyle}>
+                Your alternate email ID, Official email ID, etc.
+            </text>
+            <input
+                type="email"
+                name="semail"
+                style={inputStyle}
+                placeholder="Email Address"
             />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
