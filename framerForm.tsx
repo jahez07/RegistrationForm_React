@@ -121,13 +121,10 @@ export default function Form(props) {
                 style={inputStyle}
                 placeholder="dd|mm|yyyy"
             />
-            <h3 style={titleStyle}>
-                Blood Group <span style={{ color: "red" }}>*</span>
-            </h3>
+            <h3 style={titleStyle}>Blood Group</h3>
             <input
                 type="text"
                 name="blood"
-                required
                 style={inputStyle}
                 placeholder="Blood Group"
             />
@@ -136,20 +133,34 @@ export default function Form(props) {
             </h3>
             <input
                 type="tel"
-                name="phone"
+                name="pcphone"
                 required
                 style={inputStyle}
-                placeholder="Phone Number"
+                placeholder="Country Code (India : +91)"
             />
             <h3 style={titleStyle}>
                 Phone <span style={{ color: "red" }}>*</span>
             </h3>
             <input
                 type="tel"
-                name="phone"
+                name="pphone"
                 required
                 style={inputStyle}
                 placeholder="Phone Number"
+            />
+            <h3 style={titleStyle}>Country Code of Secondary Mobile</h3>
+            <input
+                type="tel"
+                name="scphone"
+                style={inputStyle}
+                placeholder="Country Code (UAE : +971)"
+            />
+            <h3 style={titleStyle}>Secondary Mobile</h3>
+            <input
+                type="tel"
+                name="sphone"
+                style={inputStyle}
+                placeholder="Secondary Number"
             />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
