@@ -445,6 +445,104 @@ export default function Form(props) {
                 placeholder="Mother's Email Address"
             />
             <br />
+            <h3 style={titleStyle}>Full Name of Guardian-1</h3>
+            <text style={textStyle}>
+                Not mandatory for all. Please update if only your parents are
+                away, OR those who are unable to provide their Biological
+                Parents' details. Please do not mention any Staff/Board Members
+                name of Talmid House
+            </text>
+            <input
+                type="text"
+                name="g1Name"
+                style={inputStyle}
+                placeholder="Gaurdian's Name"
+            />
+            <br />
+            <h3 style={titleStyle}>Relationship with Guardian-1</h3>
+            <text style={textStyle}>
+                Describe whether Brother/ Sister/ Stepfather/ Stepmother/ Church
+                Elder/ Family Member etc.
+            </text>
+            <input
+                type="text"
+                name="g1Relation"
+                style={inputStyle}
+                placeholder="Gaurdian's Relation"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Guardian 1 Phone Number with Country Code
+            </h3>
+            <input
+                type="text"
+                name="g1Phone"
+                style={inputStyle}
+                placeholder="Gaurdian's Relation"
+            />
+            <br />
+            <h3 style={titleStyle}>Guardian 1 Email Address</h3>
+            <input
+                type="email"
+                name="g1Email"
+                style={inputStyle}
+                placeholder="Gaurdian's Email"
+            />
+            <br />
+            <h3 style={titleStyle}>Full Name of Guardian-2</h3>
+            <text style={textStyle}>
+                Not mandatory if you have already provided Father's /Mother's
+                details
+            </text>
+            <input
+                type="email"
+                name="g2Name"
+                style={inputStyle}
+                placeholder="Gaurdian's Name"
+            />
+            <br />
+            <h3 style={titleStyle}>Relationship with Guardian-2</h3>
+            <text style={textStyle}>
+                Describe whether Brother/ Sister/ Stepfather/ Stepmother/ Church
+                Elder/ Family Member etc.
+            </text>
+            <input
+                type="email"
+                name="g2Relation"
+                style={inputStyle}
+                placeholder="Gaurdian's Name"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Guardian 2 Phone Number with Country Code
+            </h3>
+            <input
+                type="text"
+                name="g2Phone"
+                style={inputStyle}
+                placeholder="Gaurdian's Relation"
+            />
+            <br />
+            <h3 style={titleStyle}>Guardian 2 Email Address</h3>
+            <input
+                type="email"
+                name="g2Email"
+                style={inputStyle}
+                placeholder="Gaurdian's Email"
+            />
+            <br />
+            <h3 style={titleStyle}>Emergency Contact(s)</h3>
+            <text style={textStyle}>
+                Please update the FULL NAME and PHONE NUMBER of the person(s) to
+                reach your family in case of emergency
+            </text>
+            <input
+                type="email"
+                name="g2Relation"
+                style={inputStyle}
+                placeholder="Contact"
+            />
+            <br />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
