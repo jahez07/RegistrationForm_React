@@ -543,6 +543,7 @@ export default function Form(props) {
                 placeholder="Contact"
             />
             <br />
+            <h2 style={titleStyle}>Address</h2>
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
