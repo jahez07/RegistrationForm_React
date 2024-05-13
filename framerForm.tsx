@@ -538,12 +538,29 @@ export default function Form(props) {
             </text>
             <input
                 type="email"
-                name="g2Relation"
+                name="emgCon"
                 style={inputStyle}
                 placeholder="Contact"
             />
             <br />
             <h2 style={titleStyle}>Address</h2>
+            <br />
+            <h3 style={titleStyle}>
+                Permanent Address is required. If only you do not have one in
+                India, you may provide international address.
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <div style={divStyle} required>
+                <label style={labelStyle}>
+                    <input
+                        type="radio"
+                        name="acknowledement2"
+                        value="I Understand"
+                        style={inputStyle}
+                    />
+                    I understand
+                </label>
+            </div>
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
