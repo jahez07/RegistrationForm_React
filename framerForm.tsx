@@ -561,6 +561,105 @@ export default function Form(props) {
                     I understand
                 </label>
             </div>
+            <br />
+            <h3 style={titleStyle}>
+                Permanent Address Line 1 (House Name/ Family Name/ Flat No/ Flat
+                Name)
+            </h3>
+            <text style={textStyle}>
+                If "House Name/ Family Name" entered in Address Line 1, Please
+                update "Flat No/ Flat Name" in Address Line 2
+            </text>
+            <input
+                type="text"
+                name="paddl1"
+                style={inputStyle}
+                placeholder="Address Line 1"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Permanent Address Line 2 (Flat No/ Flat Name/ Street)
+            </h3>
+            <text style={textStyle}>
+                Do not repeat "Flat No/ Flat Name", if already entered in
+                Address Line 1
+            </text>
+            <input
+                type="text"
+                name="paddl2"
+                style={inputStyle}
+                placeholder="Address Line 2"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Permanent Address Line 3 (Street/ Location)
+            </h3>
+            <input
+                type="text"
+                name="paddl3"
+                style={inputStyle}
+                placeholder="Street/ Location"
+            />
+            <br />
+            <h3 style={titleStyle}>Permanent Address Line 4 (City/Town)</h3>
+            <input
+                type="text"
+                name="paddl4"
+                style={inputStyle}
+                placeholder="City/Town"
+            />
+            <br />
+            <h3 style={titleStyle}>Permanent Address Line 5 (District)</h3>
+            <input
+                type="text"
+                name="paddl5"
+                style={inputStyle}
+                placeholder="District"
+            />
+            <br />
+            <h3 style={titleStyle}>Permanent Address Line 6 (State)</h3>
+            <input
+                type="text"
+                name="paddl6"
+                style={inputStyle}
+                placeholder="State"
+            />
+            <br />
+            <h3 style={titleStyle}>Permanent Address Line 7 (Country)</h3>
+            <input
+                type="text"
+                name="paddl7"
+                style={inputStyle}
+                placeholder="Country"
+            />
+            <br />
+            <h3 style={titleStyle}>Permanent Address Line 8 (PIN Code)</h3>
+            <input
+                type="text"
+                name="paddl8"
+                style={inputStyle}
+                placeholder="PIN Code"
+            />
+            <br />
+            <h2 style={titleStyle}>ID & Disclaimer</h2>
+            <br />
+            <h3 style={titleStyle}>
+                Govt ID Document Name <span style={{ color: "red" }}>*</span>
+            </h3>
+            <text style={textStyle}>
+                Specify the type of document. Eg, whether it is a Passport /
+                Driving License / Aadhar Card / PAN Card, SSN etc. Please use
+                one with photo identification. (No need to upload image)
+            </text>
+            <input
+                type="text"
+                name="gIDname"
+                required
+                style={inputStyle}
+                placeholder="Name of the Gov. ID"
+            />
+            <br />
+            
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
