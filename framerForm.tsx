@@ -16,9 +16,14 @@ export default function Form(props) {
     // - Find inspiration: https://www.framer.com/developers/
 
     const formUrl =
-        "https://script.google.com/macros/s/AKfycbxCIoSzEsWq3BU_qRe-nK10QwJ9J9vULPYucUS0SsHix_7C2kJ7kqEG8dyxVJBxH0-t/exec"
+        "https://script.google.com/macros/s/AKfycby_XnvYtzqheQDyNuR7PAfNUrrveep3rdYHH0CJ7Agxajw7BAP8r8kZMBpn67m5Syas/exec"
     return (
-        <form action={formUrl} method="post" style={containerStyle}>
+        <form
+            action={formUrl}
+            method="post"
+            encType="multipart/form-data"
+            style={containerStyle}
+        >
             <h3 style={titleStyle}>
                 Email Address <span style={{ color: "red" }}>*</span>
             </h3>
@@ -431,6 +436,17 @@ export default function Form(props) {
             </h3>
             <input
                 type="text"
+                name="motherPhoneCode"
+                required
+                style={inputStyle}
+                placeholder="Mother's Phone"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Mother's Phone Number <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="text"
                 name="motherPhone"
                 required
                 style={inputStyle}
@@ -659,7 +675,92 @@ export default function Form(props) {
                 placeholder="Name of the Gov. ID"
             />
             <br />
-            
+            <h3 style={titleStyle}>
+                Govt ID Number <span style={{ color: "red" }}>*</span>
+            </h3>
+            <input
+                type="text"
+                name="gIDnumber"
+                required
+                style={inputStyle}
+                placeholder="Gov. ID Number"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                Disclaimer: Submission of this application does not guarantee
+                admission at Biosis Talmid House. If you do not receive any
+                response from us via Call/SMS/email/WhatsApp, etc in the next 48
+                hours, please feel free to contact us and confirm.
+                <span style={{ color: "red" }}>*</span> <br />
+                <br /> Phone +919446015497 / +919894278795 / Email :{" "}
+                <a href={"mailto:talmidhouse@gmail.com"}>
+                    talmidhouse@gmail.com
+                </a>
+            </h3>
+            <label style={labelStyle}>
+                <input
+                    type="radio"
+                    name="acknowledgement2"
+                    value="I understand"
+                    style={inputStyle}
+                />
+                I understand
+            </label>
+            <br />
+            <h3 style={titleStyle}>
+                I have read, understood, and agree to abide by the Rules and
+                Regulations of Biosis Talmid House.{" "}
+                <span style={{ color: "red" }}>*</span>
+            </h3>
+            <label style={labelStyle}>
+                <input
+                    type="radio"
+                    name="acknowledgement3"
+                    value="I Agree"
+                    style={inputStyle}
+                />
+                I agree
+            </label>
+            <br />
+            <h3 style={titleStyle}>
+                Selfie or Passport Size Photo of the Candidate
+            </h3>
+            <text style={textStyle}>
+                If unable to upload, click Cancel and continue to complete the
+                form and Submit. You may Send a photo separately to:{" "}
+                <a href={"mailto:talmidhouse@gmail.com"}>
+                    talmidhouse@gmail.com
+                </a>
+            </text>
+            <input
+                type="file"
+                name="photo"
+                accept="image/png, image/jpeg"
+                style={inputStyle}
+            />
+            <br />
+            <h3 style={titleStyle}>Your Notes</h3>
+            <input
+                type="text"
+                name="notes"
+                style={inputStyle}
+                placeholder="Notes"
+            />
+            <br />
+            <h3 style={titleStyle}>
+                For Office Purpose Only - PDF of Approved Registration Form With
+                Signature
+            </h3>
+            <text style={textStyle}>
+                Please skip. This will be uploaded by Biosis Office later.
+            </text>
+            <input
+                type="file"
+                name="sig"
+                accept="image/png, image/jpeg"
+                style={inputStyle}
+            />
+            <br />
             <input type="submit" value="Submit" style={buttonStyle} />
         </form>
     )
